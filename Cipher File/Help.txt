@@ -1,0 +1,117 @@
+---------------------------------------DOCUMENTATION---------------------------------------
+
+Welcome to Crypton the app where you get tinker around with files.
+
+Crypton has two seperate parts-
+
+1- Simple File Handler
+
+    * This mode allows users to read, write and append the file.
+    
+    * Steps of use - 
+    
+        (1) Click on the select file button to select a file, and open it. You can also type in the textbox directly.
+        (2) The contents of the file will be displayed in the textbox.
+        (3) Now you can read, write, or append.
+        (4) After you are done you can save the file by clicking on the save button.
+        (5) If you want to open new file click on clear to erase the contents of earlier file.
+    
+    * Note -
+        (1) The file types supported for reading and writing are - txt, dat and csv.
+        (2) For modification of csv files, just give space after every entry to adjust it to a particular column.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2- Encrypter
+    
+    * This mode allows user to encrypt/decrypt the text.
+    
+    * Steps of use -
+    
+        (1) Click on the select file button to select a file, and open it. You can also type in the textbox directly.
+        (2) The contents of the file will be displayed in the left textbox.
+        (3) Now, select the operation under the drop down menu - 'Select the operation'.
+        (4) Select the encoding/decoding type under the drop down menu - 'Select the script'.
+        *(5) If your encoding/decoding type was caesar cipher, then enter the index for encryption/decryption in the second row left hand side.
+        *(6) If your encoding/decoding type was vigenere cipher, then enter the primary key for encryption/decryption in the second row right hand side.
+        (7) After performing all these steps click on convert to process the text.
+        (8) The output will be displayed in the right textbox.
+        (9) Click on the copy button to copy contents of the right textbox to your clipboard.
+        (10) You can also save the file by clicking on the save button.
+        (11) To clear the contents click on the clear button in bottom left corner.
+        
+    * Note-
+        (1) The file types supported are - txt, dat and csv.
+        (2) After running the cipher you cannot MODIFY THE CONTENT. To modify the contents, please go to simple file handler.
+
+=======================================================================================================================================================================================
+
+--> A little information on the ciphers - 
+
+(1) Atbash
+
+Atbash cipher is a substitution cipher with just one specific key where all the letters are reversed that is A to Z and Z to A.
+It was originally used to encode the Hebrew alphabets but it can be modified to encode any alphabet.
+
+This part will give an idea of what happens in the cipher-
+
+A --> Z
+B --> Y
+C --> X
+D --> W
+E --> V
+F --> U
+G --> T
+H --> S
+I --> R
+J --> Q
+K --> P
+L --> O
+M --> N
+N --> M
+O --> L
+P --> K
+Q --> J
+R --> I
+S --> H
+T --> G
+U --> F
+V --> E
+W --> D
+X --> C
+Y --> B
+Z --> A
+
+For more information go on - https://www.geeksforgeeks.org/implementing-atbash-cipher/
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+(2) Caesar Cipher
+
+The Caesar Cipher technique is one of the earliest and simplest method of encryption technique.
+It's simply a type of substitution cipher, i.e., each letter of a given text is replaced by a letter some fixed number of positions down the alphabet.
+For example with a shift of 1, A would be replaced by B, B would become C, and so on.
+The method is apparently named after Julius Caesar, who apparently used it to communicate with his officials.
+Thus to cipher a given text we need an integer value, known as shift which indicates the number of position each letter of the text has been moved down.
+
+For more information go on - https://www.geeksforgeeks.org/caesar-cipher-in-cryptography/
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+(3) Vigenere Cipher
+
+Vigenere Cipher is a method of encrypting alphabetic text.
+It uses a simple form of polyalphabetic substitution.
+A polyalphabetic cipher is any cipher based on substitution, using multiple substitution alphabets.
+The encryption of the original text is done using the Vigenère square or Vigenère table.
+
+The table consists of the alphabets written out 26 times in different rows.
+Each alphabet shifted cyclically to the left compared to the previous alphabet, corresponding to the 26 possible Caesar Ciphers.
+At different points in the encryption process, the cipher uses a different alphabet from one of the rows.
+The alphabet used at each point depends on a repeating keyword.
+
+For more information go on - https://www.geeksforgeeks.org/vigenere-cipher/
+
+=======================================================================================================================================================================================
+
+
