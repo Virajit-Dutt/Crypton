@@ -1,7 +1,3 @@
-# SOURCE CODE
-
-# File Path - C:\Users\varvi\TextFiles\Assignments\My_Project_1\Final_Project.py
-
 import pickle
 import pandas as pd
 import pyperclip
